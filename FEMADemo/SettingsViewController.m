@@ -40,9 +40,9 @@
 {
     [super viewDidLoad];
     
-    self.userNameTextField .text = @"FrankXia2013";
-    self.passwordTextField .text = @"forFEMAdemo";
-    self.driveTimeTextField.text = @"30";
+    self.userNameTextField .text = @"YourBAOAccoutName";
+    self.passwordTextField .text = @"YourBAOAccountPassword";
+    self.driveTimeTextField.text = @"15";
     
     self.driveTimeTextField.keyboardType = UIKeyboardTypeNumberPad;
     
