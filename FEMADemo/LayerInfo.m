@@ -295,6 +295,11 @@
 	[self.children addObject:newChild];
 }
 
+-(void)removeAll
+{
+    [self.children removeAllObjects];
+}
+
 - (void)removeChildWithLayerName:(NSString *)layerName {    
     for (LayerInfo *layerInfo in self.children) {
         if([layerInfo.layerName isEqualToString:layerName])
@@ -307,6 +312,7 @@
 
 - (void)insertChild:(LayerInfo *)newChild atIndex:(int)index {
     newChild.parent = self;
+    index = [self.children count];
 	[self.children insertObject:newChild atIndex:index];
 }
 

@@ -80,6 +80,8 @@
 //used to remove a child with a specified name. 
 - (void)removeChildWithLayerName:(NSString *)layerName;
 
+-(void)removeAll;
+
 //gives back the number of nodes which emerge from the calling node. 
 //Includes the sub nodes too. 
 - (NSUInteger)descendantCount;

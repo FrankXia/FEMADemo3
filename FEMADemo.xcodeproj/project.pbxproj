@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015062761757C02900DF0646 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 015062751757C02900DF0646 /* ArcGIS.bundle */; };
+		015062781757C0F600DF0646 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 015062771757C0F600DF0646 /* libCorePlot-CocoaTouch.a */; };
 		0170F18D16F3BE5400B0565B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0170F18C16F3BE5400B0565B /* UIKit.framework */; };
 		0170F18F16F3BE5400B0565B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0170F18E16F3BE5400B0565B /* Foundation.framework */; };
 		0170F19116F3BE5400B0565B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0170F19016F3BE5400B0565B /* CoreGraphics.framework */; };
@@ -34,7 +36,6 @@
 		0170F1D116F3BF8700B0565B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0170F1D016F3BF8700B0565B /* MobileCoreServices.framework */; };
 		0170F1D316F3BF9E00B0565B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0170F1D216F3BF9E00B0565B /* OpenGLES.framework */; };
 		0170F1D516F3BFA800B0565B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0170F1D416F3BFA800B0565B /* QuartzCore.framework */; };
-		0170F1D716F3C07800B0565B /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0170F1D616F3C07800B0565B /* ArcGIS.bundle */; };
 		0170F1DA16F3C20F00B0565B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0170F1D916F3C20F00B0565B /* Security.framework */; };
 		0170F1DF16F3C28100B0565B /* reveal_menu_icon_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 0170F1DB16F3C28100B0565B /* reveal_menu_icon_landscape.png */; };
 		0170F1E016F3C28100B0565B /* reveal_menu_icon_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0170F1DC16F3C28100B0565B /* reveal_menu_icon_landscape@2x.png */; };
@@ -61,7 +62,6 @@
 		0170F26216FA056400B0565B /* BarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0170F25F16FA056400B0565B /* BarChartViewController.xib */; };
 		0170F26316FA056400B0565B /* BarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0170F26116FA056400B0565B /* BarChartViewController.m */; };
 		0170F26516FA05A000B0565B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0170F26416FA05A000B0565B /* GameKit.framework */; };
-		0170F26716FA062400B0565B /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0170F26616FA062400B0565B /* libCorePlot-CocoaTouch.a */; };
 		0170F26A16FB388D00B0565B /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0170F26916FB388D00B0565B /* PDFViewController.m */; };
 		0170F26C16FB38AC00B0565B /* PDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0170F26B16FB38AC00B0565B /* PDFViewController.xib */; };
 		0170F26E16FB792C00B0565B /* SchoolCalloutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0170F26D16FB792C00B0565B /* SchoolCalloutViewController.xib */; };
@@ -69,6 +69,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015062751757C02900DF0646 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
+		015062771757C0F600DF0646 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
 		0170F18916F3BE5400B0565B /* FEMADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEMADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0170F18C16F3BE5400B0565B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0170F18E16F3BE5400B0565B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,7 +108,6 @@
 		0170F1D016F3BF8700B0565B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		0170F1D216F3BF9E00B0565B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		0170F1D416F3BFA800B0565B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		0170F1D616F3C07800B0565B /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = ../../../../Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<group>"; };
 		0170F1D916F3C20F00B0565B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0170F1DB16F3C28100B0565B /* reveal_menu_icon_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reveal_menu_icon_landscape.png; sourceTree = "<group>"; };
 		0170F1DC16F3C28100B0565B /* reveal_menu_icon_landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal_menu_icon_landscape@2x.png"; sourceTree = "<group>"; };
@@ -212,7 +213,6 @@
 		0170F26016FA056400B0565B /* BarChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChartViewController.h; sourceTree = "<group>"; };
 		0170F26116FA056400B0565B /* BarChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChartViewController.m; sourceTree = "<group>"; };
 		0170F26416FA05A000B0565B /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		0170F26616FA062400B0565B /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCorePlot-CocoaTouch.a"; path = "../../CorePlot/CorePlot_1.1/Source/build/Release-universal/libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
 		0170F26816FB388D00B0565B /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		0170F26916FB388D00B0565B /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
 		0170F26B16FB38AC00B0565B /* PDFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PDFViewController.xib; sourceTree = "<group>"; };
@@ -226,7 +226,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0170F26716FA062400B0565B /* libCorePlot-CocoaTouch.a in Frameworks */,
 				0170F26516FA05A000B0565B /* GameKit.framework in Frameworks */,
 				0170F1DA16F3C20F00B0565B /* Security.framework in Frameworks */,
 				0170F1D516F3BFA800B0565B /* QuartzCore.framework in Frameworks */,
@@ -241,6 +240,7 @@
 				0170F1C516F3BF2700B0565B /* CoreLocation.framework in Frameworks */,
 				0170F18D16F3BE5400B0565B /* UIKit.framework in Frameworks */,
 				0170F18F16F3BE5400B0565B /* Foundation.framework in Frameworks */,
+				015062781757C0F600DF0646 /* libCorePlot-CocoaTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +267,10 @@
 		0170F18B16F3BE5400B0565B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				015062771757C0F600DF0646 /* libCorePlot-CocoaTouch.a */,
+				015062751757C02900DF0646 /* ArcGIS.bundle */,
 				0170F26416FA05A000B0565B /* GameKit.framework */,
-				0170F26616FA062400B0565B /* libCorePlot-CocoaTouch.a */,
 				0170F1D916F3C20F00B0565B /* Security.framework */,
-				0170F1D616F3C07800B0565B /* ArcGIS.bundle */,
 				0170F1D416F3BFA800B0565B /* QuartzCore.framework */,
 				0170F1D216F3BF9E00B0565B /* OpenGLES.framework */,
 				0170F1D016F3BF8700B0565B /* MobileCoreServices.framework */,
@@ -534,7 +534,6 @@
 				0170F1A916F3BE5400B0565B /* FEMADemoViewController_iPhone.xib in Resources */,
 				0170F1AC16F3BE5400B0565B /* FEMADemoViewController_iPad.xib in Resources */,
 				0170F1BD16F3BEAF00B0565B /* TOCViewController.xib in Resources */,
-				0170F1D716F3C07800B0565B /* ArcGIS.bundle in Resources */,
 				0170F1DF16F3C28100B0565B /* reveal_menu_icon_landscape.png in Resources */,
 				0170F1E016F3C28100B0565B /* reveal_menu_icon_landscape@2x.png in Resources */,
 				0170F1E116F3C28100B0565B /* reveal_menu_icon_portrait.png in Resources */,
@@ -556,6 +555,7 @@
 				0170F26216FA056400B0565B /* BarChartViewController.xib in Resources */,
 				0170F26C16FB38AC00B0565B /* PDFViewController.xib in Resources */,
 				0170F26E16FB792C00B0565B /* SchoolCalloutViewController.xib in Resources */,
+				015062761757C02900DF0646 /* ArcGIS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +685,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../CorePlot/CorePlot_1.1/Source/build/Release-universal\"",
+					"\"$(SRCROOT)\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -694,8 +695,8 @@
 					ArcGIS,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EE074C69-7A97-4760-9F88-8A03F237FB8D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EE074C69-7A97-4760-9F88-8A03F237FB8D";
+				PROVISIONING_PROFILE = "D4DAAF43-01AF-4049-88ED-1B97F2A462AA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D4DAAF43-01AF-4049-88ED-1B97F2A462AA";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -714,6 +715,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../CorePlot/CorePlot_1.1/Source/build/Release-universal\"",
+					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -722,8 +724,8 @@
 					ArcGIS,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EE074C69-7A97-4760-9F88-8A03F237FB8D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EE074C69-7A97-4760-9F88-8A03F237FB8D";
+				PROVISIONING_PROFILE = "D4DAAF43-01AF-4049-88ED-1B97F2A462AA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D4DAAF43-01AF-4049-88ED-1B97F2A462AA";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

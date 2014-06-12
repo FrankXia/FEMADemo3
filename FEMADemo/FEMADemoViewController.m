@@ -99,6 +99,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Set the client ID
+    NSError *error;
+    NSString* clientID = @"KDKJ9IF9o4FVNclA";
+    [AGSRuntimeEnvironment setClientID:clientID error:&error];
+    if(error){
+        // We had a problem using our client ID
+        NSLog(@"Error using client ID : %@",[error localizedDescription]);
+    }
+    
 	// Do any additional setup after loading the view, typically from a nib.
     self.userName = @"FrankXia2013";
     self.password = @"forFEMAdemo";
@@ -318,6 +328,12 @@
 
 - (IBAction)presentTableOfContents:(id)sender
 {
+    NSLog(@"presentTableOfContents");
+    
+//    // re-create TOC
+//    self.tocViewController = [[TOCViewController alloc] initWithMapView:self.mapView];
+//    self.tocViewController.demoViewController = self;
+    
     //If iPad, show legend in the PopOver, else transition to the separate view controller
 	if([[AGSDevice currentDevice] isIPad]) {
         if(!self.popOverController) {

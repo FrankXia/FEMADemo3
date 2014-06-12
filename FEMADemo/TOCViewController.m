@@ -65,8 +65,8 @@
         //assign the mapView
         self.mapView = mapView;
         
-        //process the map layers. 
-        [self processMapLayers];
+//        //process the map layers. 
+//        [self processMapLayers];
         
         //create the map level layer info object with id of -2 and layer view as nil.       
         self.mapViewLevelLayerInfo1 = [[LayerInfo alloc] initWithLayer:nil layerID:-2 name:@"Map" target:nil];
@@ -95,6 +95,9 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    [self.mapViewLevelLayerInfo1 removeAll];
+    [self.mapViewLevelLayerInfo2 removeAll];
     
     [self processMapLayers];
 }
@@ -160,7 +163,7 @@
     LayerInfo *layerInfo = [[LayerInfo alloc] initWithLayer:layer layerID:-1 name:layer.name target:self];
     
     int opacity = layer.opacity * 10000 - 9999;
-    //NSLog(@"layer opacity=%d", opacity);
+    NSLog(@"layer opacity=%d, index=%d, name=%@", opacity, index, layer.name);
     
     if(opacity == 0)
         [self.mapViewLevelLayerInfo2 insertChild:layerInfo atIndex:index];
@@ -369,6 +372,8 @@
 
 - (void)processMapLayers
 {
+    NSLog(@"processMapLayers");
+    
     //pruning the tree to remove the layers that are not in the mapview anymore.       
     NSMutableArray *layersToBeRemoved = [NSMutableArray array];
     for (LayerInfo *layerInfo in self.mapViewLevelLayerInfo1.children)
@@ -448,6 +453,8 @@
     {     
         //get the agsLayer from the mapLayers array 
         AGSLayer *agsLayer = [self.mapView.mapLayers objectAtIndex:j];
+        NSLog(@"i=%d, name=%@", i, agsLayer.name);
+        
         
         // skip AGSGraphicsLayer for this demo
         if ([agsLayer isKindOfClass:[AGSGraphicsLayer class]]) {
