@@ -100,7 +100,7 @@
 {
     [super viewDidLoad];
     
-    // Set the client ID
+    // Set the client ID, this update is only to remove the Developer watermark from the mapview. 
     NSError *error;
     NSString* clientID = @"KDKJ9IF9o4FVNclA";
     [AGSRuntimeEnvironment setClientID:clientID error:&error];
